@@ -150,7 +150,6 @@ function getTotalFoldersAndFiles(folderPath) {
 }
 
 start('main.js');
-require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
 process.on('unhandledRejection', () => {
   console.error(chalk.red(`❌ Unhandled promise rejection. Script will restart...`));
   start('main.js');
